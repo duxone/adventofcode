@@ -22,14 +22,11 @@ def solve_part_two(input_data):
             similarity_score.append(x * similarity_dict[x])
         else:
             continue
-    #similarity_score = [similarity_dict[x] for x in arr[::2]
+
     return sum(similarity_score)
-    #return sum(similarity_score)
 
     # Later, retrieve the solution
     #saved_solution = aoc.get_solution(1, 1)
-
-
     #print(f"\nSaved solution for part 1: {saved_solution}")
 
 if __name__ == "__main__":
@@ -48,9 +45,9 @@ if __name__ == "__main__":
         print("\nInput Data:")
         print(input_data[:100] + "...")  # Show first 100 chars
 
-    print(f"\nThe solution for {DAY}/{aoc.year} is:")
+    print(f"\nThe first solution for {DAY}/{aoc.year} is:")
     print(solve_part_one(input_data))
 
-    print(f"\nThe solution for {DAY}/{aoc.year} is:")
+    print(f"\nThe second solution for {DAY}/{aoc.year} is:")
     print(solve_part_two(input_data))
 
