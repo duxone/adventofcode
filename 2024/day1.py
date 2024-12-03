@@ -31,16 +31,16 @@ def solve_part_two(input_data):
 
 if __name__ == "__main__":
     display_problem = True
-    aoc = AdventOfCode(year=2024)
+    aoc = AdventOfCode(year=2024) 
     if not aoc.validate_session():
         print("Invalid session!")
         quit()
     
-    input_data = aoc.get_input(DAY)
+    input_data = aoc.get_input(DAY) # async
 
     if display_problem:
-        problem = aoc.get_problem(DAY)
-        print("Problem Description:")
+        problem = aoc.get_problem(DAY) # async 
+        print("Problem Description:") 
         print(problem)
         print("\nInput Data:")
         print(input_data[:100] + "...")  # Show first 100 chars
